@@ -1,0 +1,3 @@
+onload = () => {
+    alert("Ciao");
+}
