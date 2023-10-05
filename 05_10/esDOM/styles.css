@@ -1,0 +1,12 @@
+body {
+    background-color: blue;
+}
+
+table {
+    margin: 0 auto;
+    background-color: green;
+}
+
+table, tr, td {
+    border: black 1px solid;
+}

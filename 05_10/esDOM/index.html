@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <table>
+      <th colspan="2">Visita al museo <br> Costo di prenotazione</th>
+      <tr>
+        <td>Nome*</td>
+        <td><input type="text" id="nome"/></td>
+      </tr>
+      <tr>
+        <td>Cognome*</td>
+        <td><input type="text" id="cognome"/></td>
+      </tr>
+      <tr>
+        <td>Tipo Di Visita*</td>
+        <td>
+          
+          <input type="radio" value="solo-museo" name="tipo-visita"/>
+          Solo Museo<br>
+          <input type="radio" value="museo-giardini" name="tipo-visita"/>
+          Museo + Giardini
+        </td>
+      </tr>
+      <tr>
+        <td>N. Biglietti Tariffa Piena*</td>
+        <td><input type="number" min="0" id="tariffa-piena"/></td>
+      </tr>
+      <tr>
+        <td>N. Biglietti Tariffa Ridotta*</td>
+        <td><input type="number" min="0" id="tariffa-ridotta"/></td>
+      </tr>
+      <tr>
+        <td>Data Della Visita*</td>
+        <td><input type="text" id="data" placeholder="dd/mm/aaaa"/></td>
+      </tr>
+      <tr>
+        <td>Guida Audio</td>
+        <td><input type="checkbox" id="guida-audio"/></td>
+      </tr>
+      <tr>
+        <td>Visita Guida</td>
+        <td><input type="checkbox" id="visita-guidata"/></td>
+      </tr>
+      <tr>
+        <td>Regione di provenienza</td>
+        <td>
+          <select>
+            <option value="0">Abruzzo</option>
+            <option value="1">Basilicata</option>
+            <option value="2">Calabria</option>
+            <option value="3">Campania</option>
+            <option value="4">Emilia Romagna</option>
+            <option value="5">Friuli Venezia Giulia</option>
+            <option value="6">Lazio</option>
+            <option value="7">Liguria</option>
+            <option value="8">Lombardia</option>
+            <option value="9">Marche</option>
+            <option value="10">Molise</option>
+            <option value="11">Piemonte</option>
+            <option value="12">Puglia</option>
+            <option value="13">Sardegna</option>
+            <option value="14">Sicilia</option>
+            <option value="15">Toscana</option>
+            <option value="16">Trentino Alto Adige</option>
+            <option value="17">Umbria</option>
+            <option value="18">Val D'Aosta</option>
+            <option value="19">Veneto</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: right;">
+          <button>Calcola Costo</button>
+          <button>Reset</button>
+        </td>
+        
+      </tr>
+    </table>
+    <script src="script.js"></script>;
+  </body>
+</html>
