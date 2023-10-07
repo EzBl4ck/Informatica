@@ -18,9 +18,9 @@
         <td>Tipo Di Visita*</td>
         <td>
           
-          <input type="radio" value="solo-museo" name="tipo-visita"/>
+          <input id="radio1" type="radio" value="solo-museo" name="tipo-visita" checked="true"/>
           Solo Museo<br>
-          <input type="radio" value="museo-giardini" name="tipo-visita"/>
+          <input id="radio2" type="radio" value="museo-giardini" name="tipo-visita"/>
           Museo + Giardini
         </td>
       </tr>
@@ -47,7 +47,7 @@
       <tr>
         <td>Regione di provenienza</td>
         <td>
-          <select>
+          <select id="regione">
             <option value="0">Abruzzo</option>
             <option value="1">Basilicata</option>
             <option value="2">Calabria</option>
@@ -73,12 +73,13 @@
       </tr>
       <tr>
         <td colspan="2" style="text-align: right;">
-          <button>Calcola Costo</button>
-          <button>Reset</button>
+          <button type="submit" onclick="submit()">Calcola Costo</button>
+          <button type="reset" onclick="reset()">Reset</button>
         </td>
         
       </tr>
     </table>
-    <script src="script.js"></script>;
+    <div id="response"></div>
+    <script src="script.js"></script>
   </body>
 </html>
