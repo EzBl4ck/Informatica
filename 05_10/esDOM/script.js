@@ -49,7 +49,7 @@ function validate() {
 
 function validateDate(dateStr) {
     // Split the input string into day, month, and year parts
-    const dateParts = dateStr.split('/');
+    const dateParts = dateStr.split('/'); // dd/mm/aaaa
     
     // Check if there are exactly three parts (day, month, year)
     if (dateParts.length !== 3) {
@@ -74,11 +74,6 @@ function validateDate(dateStr) {
     // Check if the day is valid for the given month
     const daysInMonth = new Date(year, month, 0).getDate();
     if (day < 1 || day > daysInMonth) {
-      return false;
-    }
-    
-    const currentYear = new Date().getFullYear();
-    if (year !== currentYear) {
       return false;
     }
     
